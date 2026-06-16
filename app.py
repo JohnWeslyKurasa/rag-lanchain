@@ -29,7 +29,7 @@ if LANGCHAIN_API_KEY:
 
 CORPUS_PATH = "/kaggle/input/competitions/niat-masterclass-rag-challenge/zyro-dynamics-hr-corpus/"
 if not os.path.exists(CORPUS_PATH):
-    CORPUS_PATH = "./hr_docs/"
+    CORPUS_PATH = "."
 
 @st.cache_resource(show_spinner="Loading HR policy documents...")
 def build_pipeline():
